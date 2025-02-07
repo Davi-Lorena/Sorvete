@@ -1,0 +1,44 @@
+/* RESET */
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* BASE */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #faebd74d;
+}
+
+
+h1, h2 {
+    font-family: 'Tangerine', serif;
+}
+
+/* Utils */
+
+.container {
+    max-width: 85%;
+    margin-inline: auto;
+}
+
+.desktop-only {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .desktop-only {
+        display: block;
+    }
+}

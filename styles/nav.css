@@ -1,0 +1,46 @@
+#bg-nav {
+
+    background-color: #1a1616;
+
+
+ & nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .75rem;
+    gap: 1rem;
+    border-bottom: 1px solid #000;
+    font-size: .75rem;
+    color: rgb(229, 221, 211);
+    font-family: 'Raleway', serif;
+
+    & img {
+        border-radius: 50%;
+        width: 3.25rem;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+
+    & a {
+        position: relative;
+        &::after {
+            content: "";
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            transform: scaleX(0);
+            background-color: rgb(229, 221, 211);
+            transition: transform 300ms ease;
+        }
+        
+        &:hover {
+            &::after {
+                transform: scaleX(1);
+            }
+        }
+     }
+
+}
+} 

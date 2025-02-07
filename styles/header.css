@@ -1,0 +1,113 @@
+header#hero {
+    padding-block: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto flex', serif;
+
+& #title { 
+text-align: center;
+& h1 {
+    font-size: 5rem;   
+    font-family: 'Tangerine', serif;
+}
+
+& p {
+    font-size: 1.05rem;
+}
+
+}
+
+& #cta {
+    padding-block: 1.25rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+& #links {
+display: flex;
+flex-direction: column;
+gap: .5rem;
+
+& .contacts {
+    display: flex;
+    gap: .5rem;
+}
+
+
+& p, a {
+display: flex;
+align-items: center;
+gap: .25rem;
+font-size: .875rem;
+}
+
+& p {
+justify-content: center;
+}
+
+& a {
+    padding: 1rem;
+    padding-left: .75rem;
+    border: 1px solid;
+    border-radius: .75rem;
+    width: 8rem;
+    filter: drop-shadow(0 0 4px #0000005e);
+    color: #ffffff;
+    transition: all 300ms ease;
+
+&:hover {
+    scale: 1.05;
+    transform: translate(.25rem, -.25rem);
+    z-index: 2;
+}
+
+}
+
+& #map {
+    /* background-color: #EF5F4C;
+    border-color: #d84330; */
+    background: linear-gradient(45deg, #50b47b, #3cae5a, #056608, #024102);
+}
+
+& #instagram {
+    background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+    border-color: #DD2A7B;
+}
+
+}
+
+}
+
+& #images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem;
+
+    & img {
+        height: 25rem;
+border: 1px solid rgb(168, 154, 136);
+border-radius: .75rem;
+filter: drop-shadow(0 0 4px #0000005e);
+    }
+}
+
+
+
+}
+/*
+& #bg-header {
+     background-color: rgba(255, 240, 217, 0.86);
+    box-shadow: 0 4px 5px #0000008b; 
+} */
+
+@media (width >= 1024px) {
+    header#hero {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
